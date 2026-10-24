@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "city": "Surabaya",
+    "app_name": "GOBIS Suroboyo - Full Data Routing",
+    "version": "2.0-complete",
+    "total_routes": 4,
+    "updated_at": "2026-10-24"
+  },
+  "routes": [
+    { "id": "SB-R1", "name": "R1: Purabaya - Tanjung Perak", "type": "Bus", "headway_minutes": 15 },
+    { "id": "SB-R2", "name": "R2: Tanjung Perak - Purabaya", "type": "Bus", "headway_minutes": 15 },
+    { "id": "SB-R4_A", "name": "R4 Berangkat: Purabaya - PENS", "type": "Bus", "headway_minutes": 20 },
+    { "id": "SB-R4_B", "name": "R4 Kembali: PENS - Purabaya", "type": "Bus", "headway_minutes": 20 },
+    { "id": "SB-SBT_A", "name": "SBT Berangkat: Purabaya - Pirngadi", "type": "Double Decker", "headway_minutes": 30 },
+    { "id": "SB-SBT_B", "name": "SBT Kembali: Alun Contong - Purabaya", "type": "Double Decker", "headway_minutes": 30 },
+    { "id": "SB-WKND", "name": "Akhir Pekan: TIJ - Romokalisari", "type": "Bus", "headway_minutes": 45 }
+  ],
+  "stops": [
+    { "id": "H_PURABAYA", "pair_id": "P_PURABAYA", "name": "Terminal Purabaya", "lat": -7.3521, "lng": 112.7233, "direction": "Terminus Hub", "routes": ["SB-R1", "SB-R2", "SB-R4_A", "SB-R4_B", "SB-SBT_A", "SB-SBT_B"], "time_from_origin_mins": 0 },
+    
+    { "id": "H_DUKUHMENANGGAL", "pair_id": "P_MENANGGAL", "name": "Dukuh Menanggal", "lat": -7.3405, "lng": 112.7275, "direction": "Utara", "routes": ["SB-R1", "SB-R4_A", "SB-SBT_A"], "time_from_origin_mins": 4 },
+    { "id": "H_KERTOMENANGGAL", "pair_id": "P_MENANGGAL", "name": "Kerto Menanggal", "lat": -7.3405, "lng": 112.7276, "direction": "Selatan", "routes": ["SB-R2", "SB-R4_B", "SB-SBT_B"], "time_from_origin_mins": 55 },
+    
+    { "id": "H_SIWALANKERTO_A", "pair_id": "P_SIWALANKERTO", "name": "Siwalankerto A", "lat": -7.3350, "lng": 112.7291, "direction": "Utara", "routes": ["SB-R1", "SB-R4_A", "SB-SBT_A"], "time_from_origin_mins": 8 },
+    { "id": "H_SIWALANKERTO_B", "pair_id": "P_SIWALANKERTO", "name": "Siwalankerto B", "lat": -7.3350, "lng": 112.7289, "direction": "Selatan", "routes": ["SB-R2", "SB-R4_B", "SB-SBT_B"], "time_from_origin_mins": 53 },
+    
+    { "id": "H_TAMANPELANGI_A", "pair_id": "P_TAMANPELANGI", "name": "Taman Pelangi (Arah Utara)", "lat": -7.3245, "lng": 112.7311, "direction": "Utara", "routes": ["SB-R1", "SB-R4_A", "SB-SBT_A"], "time_from_origin_mins": 12 },
+    { "id": "H_TAMANPELANGI_B", "pair_id": "P_TAMANPELANGI", "name": "Taman Pelangi (Arah Selatan)", "lat": -7.3245, "lng": 112.7309, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 50 },
+    
+    { "id": "H_JEMURNGAWINAN", "pair_id": "P_NG_UINSA", "name": "Jemur Ngawinan", "lat": -7.3250, "lng": 112.7310, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 51 },
+    { "id": "H_UINSA", "pair_id": "P_NG_UINSA", "name": "UINSA", "lat": -7.3200, "lng": 112.7330, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 49 },
+    
+    { "id": "H_RSBHAYANGKARA", "pair_id": "P_BHAYANGKARA", "name": "RS Bhayangkara", "lat": -7.3160, "lng": 112.7325, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 15 },
+    { "id": "H_WONOCOLO", "pair_id": "P_BHAYANGKARA", "name": "Wonocolo", "lat": -7.3180, "lng": 112.7335, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 47 },
+    
+    { "id": "H_UBHARA", "pair_id": "P_UB_MARGOREJO", "name": "UBHARA", "lat": -7.3120, "lng": 112.7330, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 17 },
+    { "id": "H_MARGOREJO", "pair_id": "P_UB_MARGOREJO", "name": "Margorejo", "lat": -7.3150, "lng": 112.7340, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 45 },
+    
+    { "id": "H_PUSVETMA", "pair_id": "P_PUS_RSAL", "name": "PUSVETMA", "lat": -7.3090, "lng": 112.7335, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 19 },
+    { "id": "H_RSAL", "pair_id": "P_PUS_RSAL", "name": "RSAL", "lat": -7.3050, "lng": 112.7350, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 43 },
+    
+    { "id": "H_KETINTANG", "pair_id": "P_KETINTANG", "name": "Ketintang", "lat": -7.3075, "lng": 112.7335, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 21 },
+    { "id": "H_ROYALPLAZA", "pair_id": "P_KETINTANG", "name": "Royal Plaza", "lat": -7.3060, "lng": 112.7340, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 23 },
+    
+    { "id": "H_JOYOBOYO_TIJ", "pair_id": "P_JOYOBOYO", "name": "Terminal Intermoda Joyoboyo (TIJ)", "lat": -7.2974, "lng": 112.7345, "direction": "Utara Hub", "routes": ["SB-R1", "SB-SBT_A", "SB-WKND"], "time_from_origin_mins": 25 },
+    { "id": "H_JOYOBOYO2", "pair_id": "P_JOYOBOYO", "name": "Joyoboyo 2", "lat": -7.2975, "lng": 112.7344, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 40 },
+    { "id": "H_MARMOYO", "pair_id": "P_JOYOBOYO", "name": "Marmoyo", "lat": -7.2900, "lng": 112.7370, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 38 },
+    
+    { "id": "H_MUSEUMBI", "pair_id": "P_DARMO", "name": "Museum BI", "lat": -7.2920, "lng": 112.7370, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 27 },
+    { "id": "H_DARMO", "pair_id": "P_DARMO", "name": "Darmo", "lat": -7.2842, "lng": 112.7397, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 36 },
+    { "id": "H_RSDARMO", "pair_id": "P_DARMO", "name": "RS Darmo", "lat": -7.2843, "lng": 112.7398, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 29 },
+    
+    { "id": "H_GOZCO", "pair_id": "P_SANTAMARIA", "name": "Gozco", "lat": -7.2790, "lng": 112.7400, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 31 },
+    { "id": "H_SANTAMARIA", "pair_id": "P_SANTAMARIA", "name": "Santa Maria", "lat": -7.2780, "lng": 112.7410, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 34 },
+    
+    { "id": "H_PANDEGILING1", "pair_id": "P_PANDEGILING", "name": "Pandegiling 1", "lat": -7.2750, "lng": 112.7405, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 33 },
+    { "id": "H_PANDEGILING2", "pair_id": "P_PANDEGILING", "name": "Pandegiling 2", "lat": -7.2751, "lng": 112.7404, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 32 },
+    
+    { "id": "H_URIP1", "pair_id": "P_URIP", "name": "Urip Sumoharjo 1", "lat": -7.2710, "lng": 112.7400, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 35 },
+    { "id": "H_URIP2", "pair_id": "P_URIP", "name": "Urip Sumoharjo 2", "lat": -7.2711, "lng": 112.7399, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 30 },
+    { "id": "H_SONOKEMBANG", "pair_id": "P_URIP", "name": "Sono Kembang", "lat": -7.2720, "lng": 112.7435, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 28 },
+    
+    { "id": "H_BASUKIRAHMAT", "pair_id": "P_PUSATKOTA1", "name": "Basuki Rahmat", "lat": -7.2680, "lng": 112.7395, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 37 },
+    { "id": "H_PANGLIMASUDIRMAN", "pair_id": "P_PUSATKOTA1", "name": "Panglima Sudirman", "lat": -7.2690, "lng": 112.7430, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 26 },
+    
+    { "id": "H_KALIASIN", "pair_id": "P_PUSATKOTA2", "name": "Kaliasin", "lat": -7.2650, "lng": 112.7380, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 39 },
+    { "id": "H_GUBSURYO", "pair_id": "P_PUSATKOTA2", "name": "Gubernur Suryo", "lat": -7.2655, "lng": 112.7425, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 24 },
+    { "id": "H_SIMPANGDUKUH", "pair_id": "P_PUSATKOTA2", "name": "Simpang Dukuh", "lat": -7.2640, "lng": 112.7410, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 22 },
+    
+    { "id": "H_EMBONGMALANG", "pair_id": "P_PENGHUBUNG_PST", "name": "Embong Malang", "lat": -7.2605, "lng": 112.7365, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 41 },
+    { "id": "H_TUNJUNGAN", "pair_id": "P_PENGHUBUNG_PST", "name": "Tunjungan", "lat": -7.2625, "lng": 112.7402, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 20 },
+    
+    { "id": "H_BLAURAN", "pair_id": "P_SIOLA", "name": "Blauran", "lat": -7.2570, "lng": 112.7350, "direction": "Utara", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 43 },
+    { "id": "H_PIRNGADI", "pair_id": "P_SIOLA", "name": "Pirngadi", "lat": -7.2540, "lng": 112.7360, "direction": "Utara (Akhir SBT)", "routes": ["SB-R1", "SB-SBT_A"], "time_from_origin_mins": 45 },
+    { "id": "H_SIOLA", "pair_id": "P_SIOLA", "name": "Siola", "lat": -7.2589, "lng": 112.7386, "direction": "Selatan", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 18 },
+    { "id": "H_ALUNCONTONG", "pair_id": "P_SIOLA", "name": "Alun-Alun Contong", "lat": -7.2530, "lng": 112.7385, "direction": "Selatan (Awal SBT)", "routes": ["SB-R2", "SB-SBT_B"], "time_from_origin_mins": 16 },
+    
+    { "id": "H_PASARTURI", "pair_id": "P_TUGUPA", "name": "Pasar Turi", "lat": -7.2490, "lng": 112.7350, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 47 },
+    { "id": "H_MASJIDKEMAYORAN", "pair_id": "P_TUGUPA", "name": "Masjid Kemayoran", "lat": -7.2450, "lng": 112.7360, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 48 },
+    { "id": "H_TUGUPA", "pair_id": "P_TUGUPA", "name": "Tugu Pahlawan", "lat": -7.2450, "lng": 112.7370, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 14 },
+    { "id": "H_VETERAN", "pair_id": "P_TUGUPA", "name": "Veteran", "lat": -7.2390, "lng": 112.7380, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 12 },
+    
+    { "id": "H_INDRAPURA", "pair_id": "P_JEMBATANMERAH", "name": "Indrapura", "lat": -7.2400, "lng": 112.7355, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 50 },
+    { "id": "H_JEMBATANMERAH", "pair_id": "P_JEMBATANMERAH", "name": "Jembatan Merah", "lat": -7.2369, "lng": 112.7371, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 10 },
+    { "id": "H_RAJAWALI", "pair_id": "P_JEMBATANMERAH", "name": "Rajawali", "lat": -7.2343, "lng": 112.7335, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 8 },
+    
+    { "id": "H_IKANKERAPU_A", "pair_id": "P_IKANKERAPU", "name": "Ikan Kerapu A", "lat": -7.2300, "lng": 112.7340, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 51 },
+    { "id": "H_IKANKERAPU_B", "pair_id": "P_IKANKERAPU", "name": "Ikan Kerapu B", "lat": -7.2300, "lng": 112.7341, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 7 },
+    
+    { "id": "H_TJTORAWITAN_A", "pair_id": "P_TORAWITAN", "name": "Tanjung Torawitan A", "lat": -7.2200, "lng": 112.7335, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 53 },
+    { "id": "H_TJTORAWITAN_B", "pair_id": "P_TORAWITAN", "name": "Tanjung Torawitan B", "lat": -7.2200, "lng": 112.7336, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 5 },
+    
+    { "id": "H_BARUNAWATI_A", "pair_id": "P_BARUNAWATI", "name": "Barunawati A", "lat": -7.2100, "lng": 112.7330, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 55 },
+    { "id": "H_BARUNAWATI_B", "pair_id": "P_BARUNAWATI", "name": "Barunawati B", "lat": -7.2100, "lng": 112.7331, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 3 },
+    
+    { "id": "H_PELINDOPLACE_A", "pair_id": "P_PERAK", "name": "Pelindo Place A", "lat": -7.2000, "lng": 112.7330, "direction": "Utara", "routes": ["SB-R1"], "time_from_origin_mins": 56 },
+    { "id": "H_PELINDOPLACE_B", "pair_id": "P_PERAK", "name": "Pelindo Place B", "lat": -7.2000, "lng": 112.7331, "direction": "Selatan", "routes": ["SB-R2"], "time_from_origin_mins": 1 },
+    { "id": "H_PERAK", "pair_id": "P_PERAK", "name": "Pelabuhan Tanjung Perak", "lat": -7.1950, "lng": 112.7330, "direction": "Terminus R1/R2", "routes": ["SB-R1", "SB-R2"], "time_from_origin_mins": 57 },
+    
+    
+    { "id": "H_JEMURSARI_A", "pair_id": "P_JEMURSARI", "name": "Jemursari A", "lat": -7.3235, "lng": 112.7410, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 15 },
+    { "id": "H_JEMURSARI_B", "pair_id": "P_JEMURSARI", "name": "Jemursari B", "lat": -7.3235, "lng": 112.7411, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 47 },
+    { "id": "H_RSIJEMURSARI_A", "pair_id": "P_RSI", "name": "RSI Jemursari A", "lat": -7.3230, "lng": 112.7430, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 17 },
+    { "id": "H_RSIJEMURSARI_B", "pair_id": "P_RSI", "name": "RSI Jemursari B", "lat": -7.3230, "lng": 112.7431, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 45 },
+    
+    { "id": "H_PERTAMINA_A", "pair_id": "P_PERTAMINA", "name": "Kantor Pertamina A", "lat": -7.3220, "lng": 112.7450, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 18 },
+    { "id": "H_PERTAMINA_B", "pair_id": "P_PERTAMINA", "name": "Kantor Pertamina B", "lat": -7.3220, "lng": 112.7451, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 44 },
+    { "id": "H_DINKES_A", "pair_id": "P_DINKES", "name": "Kantor Dinas Kesehatan A", "lat": -7.3210, "lng": 112.7480, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 20 },
+    { "id": "H_DINKES_B", "pair_id": "P_DINKES", "name": "Kantor Dinas Kesehatan B", "lat": -7.3210, "lng": 112.7481, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 42 },
+    
+    { "id": "H_PRAPEN_A", "pair_id": "P_PRAPEN", "name": "Prapen Indah Timur A", "lat": -7.3190, "lng": 112.7520, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 22 },
+    { "id": "H_PRAPEN_B", "pair_id": "P_PRAPEN", "name": "Prapen Indah Timur B", "lat": -7.3190, "lng": 112.7521, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 40 },
+    { "id": "H_SIDOSERMO", "pair_id": "P_SIDOSERMO", "name": "Sidosermo Indah", "lat": -7.3150, "lng": 112.7550, "direction": "Utara", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 24 },
+    
+    { "id": "H_NGINDEN_A", "pair_id": "P_NGINDEN", "name": "Nginden A", "lat": -7.3050, "lng": 112.7590, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 26 },
+    { "id": "H_NGINDEN_B", "pair_id": "P_NGINDEN", "name": "Nginden B", "lat": -7.3050, "lng": 112.7591, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 36 },
+    { "id": "H_BRATANG", "pair_id": "P_BRATANG", "name": "Terminal Bratang", "lat": -7.2950, "lng": 112.7600, "direction": "Utara Hub", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 28 },
+    
+    { "id": "H_TAMANFLORA_A", "pair_id": "P_FLORA", "name": "Taman Flora A", "lat": -7.2945, "lng": 112.7605, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 29 },
+    { "id": "H_TAMANFLORA_B", "pair_id": "P_FLORA", "name": "Taman Flora B", "lat": -7.2945, "lng": 112.7606, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 34 },
+    
+    { "id": "H_UBAYANGAGEL_B", "pair_id": "P_NGAGEL", "name": "UBAYA Ngagel B", "lat": -7.2920, "lng": 112.7605, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 30 },
+    { "id": "H_UBAYANGAGEL_A", "pair_id": "P_NGAGEL", "name": "UBAYA Ngagel A", "lat": -7.2920, "lng": 112.7606, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 33 },
+    { "id": "H_KRUKAHTIMUR", "pair_id": "P_KRUKAH", "name": "Krukah Timur", "lat": -7.2890, "lng": 112.7610, "direction": "Utara", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 31 },
+    
+    { "id": "H_NGAGELJAYA_A", "pair_id": "P_PUCANG", "name": "Ngagel Jaya A", "lat": -7.2850, "lng": 112.7615, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 33 },
+    { "id": "H_NGAGELJAYA_B", "pair_id": "P_PUCANG", "name": "Ngagel Jaya B", "lat": -7.2850, "lng": 112.7616, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 31 },
+    { "id": "H_PUCANGSEWU_A", "pair_id": "P_PUCANG2", "name": "Puskesmas Pucang Sewu A", "lat": -7.2800, "lng": 112.7620, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 35 },
+    { "id": "H_PUCANGSEWU_B", "pair_id": "P_PUCANG2", "name": "Puskesmas Pucang Sewu B", "lat": -7.2800, "lng": 112.7621, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 29 },
+    
+    { "id": "H_GEDUNGPAMULANGAN_A", "pair_id": "P_PAMULANGAN", "name": "Gedung Pamulangan A", "lat": -7.2780, "lng": 112.7623, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 36 },
+    { "id": "H_GEDUNGPAMULANGAN_B", "pair_id": "P_PAMULANGAN", "name": "Gedung Pamulangan B", "lat": -7.2780, "lng": 112.7624, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 28 },
+    { "id": "H_GUBENGKERTAJAYA_A", "pair_id": "P_GUB_KERT", "name": "Gubeng Kertajaya A", "lat": -7.2750, "lng": 112.7625, "direction": "Utara", "routes": ["SB-R4_A"], "time_from_origin_mins": 37 },
+    { "id": "H_GUBENGKERTAJAYA_B", "pair_id": "P_GUB_KERT", "name": "Gubeng Kertajaya B", "lat": -7.2750, "lng": 112.7626, "direction": "Selatan", "routes": ["SB-R4_B"], "time_from_origin_mins": 27 },
+    
+    { "id": "H_GUBENGAIRLANGGA", "pair_id": "P_HOCKEY", "name": "Gubeng Airlangga", "lat": -7.2700, "lng": 112.7630, "direction": "Utara", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 38 },
+    { "id": "H_LAPANGANHOCKEY", "pair_id": "P_HOCKEY", "name": "Lapangan Hockey", "lat": -7.2680, "lng": 112.7620, "direction": "Utara", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 39 },
+    
+    { "id": "H_UNAIRA", "pair_id": "P_UNAIRA", "name": "UNAIR Kampus A", "lat": -7.2615, "lng": 112.7565, "direction": "Timur", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 41 },
+    { "id": "H_KEDUNGTARUKAN_A", "pair_id": "P_KEDUNG", "name": "Kedung Tarukan A", "lat": -7.2630, "lng": 112.7590, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 43 },
+    { "id": "H_KEDUNGTARUKAN_B", "pair_id": "P_KEDUNG", "name": "Kedung Tarukan B", "lat": -7.2630, "lng": 112.7591, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 25 },
+    
+    { "id": "H_MOJOKIDUL_A", "pair_id": "P_MOJO", "name": "Mojo Kidul A", "lat": -7.2650, "lng": 112.7620, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 44 },
+    { "id": "H_MOJOKIDUL_B", "pair_id": "P_MOJO", "name": "Mojo Kidul B", "lat": -7.2650, "lng": 112.7621, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 23 },
+    { "id": "H_SMKN5_A", "pair_id": "P_SMK5", "name": "SMKN 5 A", "lat": -7.2660, "lng": 112.7650, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 45 },
+    { "id": "H_SMKN5_B", "pair_id": "P_SMK5", "name": "SMKN 5 B", "lat": -7.2660, "lng": 112.7651, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 21 },
+    
+    { "id": "H_DHARMAHUSADA_A", "pair_id": "P_DHARMA", "name": "Simpang Dharmahusada Utara A", "lat": -7.2670, "lng": 112.7680, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 46 },
+    { "id": "H_DHARMAHUSADA_B", "pair_id": "P_DHARMA", "name": "Simpang Dharmahusada Utara B", "lat": -7.2670, "lng": 112.7681, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 20 },
+    { "id": "H_KALIKEPITING", "pair_id": "P_KEPITING", "name": "Kalikepiting", "lat": -7.2680, "lng": 112.7710, "direction": "Timur", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 47 },
+    
+    { "id": "H_KALIJUDAN_A", "pair_id": "P_JUDAN", "name": "Kalijudan Indah A", "lat": -7.2685, "lng": 112.7750, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 48 },
+    { "id": "H_KALIJUDAN_B", "pair_id": "P_JUDAN", "name": "Kalijudan Indah B", "lat": -7.2685, "lng": 112.7751, "direction": "Barat", "routes": ["SB-R4_B"], "time_from_origin_mins": 18 },
+    { "id": "H_SMPHIDAYATUL", "pair_id": "P_HIDAYATUL", "name": "SMP Hidayatul Ummah", "lat": -7.2686, "lng": 112.7760, "direction": "Timur", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 49 },
+    
+    { "id": "H_MULYOREJO_B", "pair_id": "P_MULYO", "name": "Mulyorejo B", "lat": -7.2688, "lng": 112.7780, "direction": "Timur", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 50 },
+    { "id": "H_UNAIRB", "pair_id": "P_UNAIRB", "name": "UNAIR B", "lat": -7.2680, "lng": 112.7580, "direction": "Timur", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 51 },
+    { "id": "H_UNAIRC", "pair_id": "P_UNAIRC", "name": "UNAIR Kampus C", "lat": -7.2690, "lng": 112.7845, "direction": "Timur", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 52 },
+    { "id": "H_RSUNAIR", "pair_id": "P_RSUNAIR", "name": "RS UNAIR", "lat": -7.2695, "lng": 112.7840, "direction": "Timur", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 53 },
+    { "id": "H_SUTEREJOBARAT", "pair_id": "P_SUTEREJO", "name": "Suterejo Barat", "lat": -7.2720, "lng": 112.7840, "direction": "Selatan", "routes": ["SB-R4_A", "SB-R4_B"], "time_from_origin_mins": 54 },
+    
+    { "id": "H_GALAXY_B", "pair_id": "P_GALAXY", "name": "Galaxy B", "lat": -7.2755, "lng": 112.7820, "direction": "Selatan", "routes": ["SB-R4_A"], "time_from_origin_mins": 56 },
+    { "id": "H_GALAXY_A", "pair_id": "P_GALAXY", "name": "Galaxy A", "lat": -7.2755, "lng": 112.7821, "direction": "Utara", "routes": ["SB-R4_B"], "time_from_origin_mins": 10 },
+    
+    { "id": "H_KERTAJAYA_INDAH", "pair_id": "P_KERT_INDAH", "name": "Kertajaya Indah", "lat": -7.2780, "lng": 112.7830, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 58 },
+    { "id": "H_KONIMERR", "pair_id": "P_KONIMERR", "name": "Koni MERR", "lat": -7.2790, "lng": 112.7850, "direction": "Utara", "routes": ["SB-R4_B"], "time_from_origin_mins": 8 },
+    { "id": "H_MANYARKERTAADI", "pair_id": "P_MANYARKERTA", "name": "Manyar Kerta Adi", "lat": -7.2810, "lng": 112.7880, "direction": "Utara", "routes": ["SB-R4_B"], "time_from_origin_mins": 6 },
+    
+    { "id": "H_BUNDARANITS", "pair_id": "P_BUNDARANITS", "name": "Bundaran ITS", "lat": -7.2800, "lng": 112.7900, "direction": "Timur", "routes": ["SB-R4_A"], "time_from_origin_mins": 60 },
+    { "id": "H_ITS", "pair_id": "P_ITS", "name": "ITS", "lat": -7.2825, "lng": 112.7938, "direction": "Utara", "routes": ["SB-R4_B"], "time_from_origin_mins": 3 },
+    
+    { "id": "H_PENS_B", "pair_id": "P_PENS", "name": "PENS B", "lat": -7.2760, "lng": 112.7945, "direction": "Terminus R4_A", "routes": ["SB-R4_A"], "time_from_origin_mins": 62 },
+    { "id": "H_PENS_A", "pair_id": "P_PENS", "name": "PENS A", "lat": -7.2760, "lng": 112.7946, "direction": "Awal R4_B", "routes": ["SB-R4_B"], "time_from_origin_mins": 0 },
+    
+    { "id": "H_TOW", "pair_id": "P_TOW", "name": "Terminal Tambak Osowilangun (TOW)", "lat": -7.2185, "lng": 112.6515, "direction": "Barat Laut", "routes": ["SB-WKND"], "time_from_origin_mins": 40 },
+    { "id": "H_ROMOKALISARI", "pair_id": "P_ROMO", "name": "Romokalisari Adventure Land", "lat": -7.1970, "lng": 112.6465, "direction": "Terminus Wisata", "routes": ["SB-WKND"], "time_from_origin_mins": 55 }
+  ]
+}
